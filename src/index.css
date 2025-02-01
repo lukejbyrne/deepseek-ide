@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gutter {
+  background-color: #4a5568;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter:hover {
+  background-color: #2d3748;
+}
+
+.gutter.gutter-horizontal {
+  cursor: col-resize;
+}
+
+.gutter.gutter-vertical {
+  cursor: row-resize;
+}
+
+.split {
+  display: flex;
+}
+
+/* XTerm.js custom styles */
+.xterm {
+  padding: 8px;
+  height: 100%;
+}
+
+.xterm-viewport {
+  overflow-y: auto !important;
+}
+
+.xterm-screen {
+  height: 100% !important;
+}
+
+/* Chat bubble max-width */
+div[role="alert"] {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Code block styling */
+pre {
+  overflow-x: auto; /* Allows horizontal scrolling */
+  max-width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
